@@ -1,5 +1,5 @@
 from ftplib import FTP, all_errors
-import socket, os
+import socket, os, getpass
 
 
 def help_msg():
@@ -64,7 +64,8 @@ def main():
         with FTP(hostname.strip()) as ftp:
 
             username = input("> Enter your username: ")
-            password = input("> Enter your password: ")
+            # don't show pass when typing it
+            password = getpass.getpass("> Enter your password(It won't show up): ")
 
             try:
                 ftp.login(username.strip(), password.strip())
