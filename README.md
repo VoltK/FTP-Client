@@ -1,1 +1,2 @@
-# simple_ftp_client
+# FTP Client
+
