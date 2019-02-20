@@ -11,10 +11,7 @@ def help_msg():
     print('\t"mkd dirname" to create directory')
     print('\t"rmd dirname" to delete directory')
     print('\t"rename filename newfilename" to rename file')
-    print('\t"relogin" if accidentally lost connection')
     print('\t"exit" to exit from program')
-
-
 
 def check_commands(func, *args):
         try:
